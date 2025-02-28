@@ -9,6 +9,10 @@ document.getElementById("cashout-btn").addEventListener("click", function (event
     if (convertedPin === 1234) {
       const sum = convertedMainBalance - convertedAmount;
       document.getElementById("main-balance").innerText = sum;
+      const conatiner =document.getElementById("transectioncontainer")
+        const p = document.createElement("p");
+        p.innerText = `You have cash out ${convertedAmount} to your account`;
+        conatiner.appendChild(p);
     } else {
       alert("enter valid pin");
     }

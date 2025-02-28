@@ -16,7 +16,7 @@
             <h1 class="text-3xl font-bold"> $ <span id="main-balance">4500</span></h1>
             <p class="p-1 border rounded">available balance</p>
         </div>
-        <button class="btn">logout</button>
+        <button class="btn" id="log-out-btn">logout</button>
     </nav>
     <section class="mt-10">
         <h1 class="mb-2 text-2xl font-bold">Welcome to Payooo!</h1>
@@ -43,7 +43,7 @@
     <img class="w-8 mx-auto" src="./assets/wallet1.png" alt="">
     <h3>get Bonus</h3>
 </div>
-<div class="p-4 text-center border rounded-sm cursor-pointer box">
+<div class="p-4 text-center border rounded-sm cursor-pointer box" id="transaction-history-box">
     <img class="w-8 mx-auto" src="./assets/wallet1.png" alt="">
     <h3>Transaction history</h3>
 </div>
@@ -57,7 +57,7 @@
                   <div class="w-full max-w-sm shadow-2xl card shrink-0">
                     <div class="card-body">
                         <legend>Select Bank</legend>
-                        <select class="select">
+                        <select class="select" id="allbank">
                             <option disabled selected>Select bank</option>
                             <option value="Bkash">Bkash</option>
                             <option value="Nagad">nagad</option>
@@ -94,10 +94,24 @@
                 <button id="cashout-btn" type="submit" id="login-btn" class="p-5 mt-4 bg-blue-700 btn btn-neutral">Cashout</button>
               </fieldset>
         </section>
+        <!-- transaction history -->
+<section id="transaction-history" class="pl-10">
+    <h1 class="p-3 text-3xl font-bold text-center text-red-600">Transaction history</h1>
+    
+<div id="transectioncontainer">
+    
+</div>
+   
+    
+</section>
+
+        
     </section>
 </header>
 <script src="./javascript/addmoney.js"></script>
 <script src="./javascript/toggole.js"></script>
 <script src="./javascript/cashout.js"></script>
+<script src="./javascript/transaction.js"></script>
+<script src="./javascript/logout.js"></script>
 </body>
 </html>
