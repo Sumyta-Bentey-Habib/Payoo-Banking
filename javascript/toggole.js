@@ -1,4 +1,5 @@
 document.getElementById("cash-out").style.display = "none";
+document.getElementById("transaction-history").style.display = "none";
 
 
 
